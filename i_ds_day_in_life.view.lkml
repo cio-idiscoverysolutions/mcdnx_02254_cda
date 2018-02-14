@@ -41,9 +41,10 @@ view: i_ds_day_in_life {
   }
 
   dimension: file_of_interest_ind {
-    type: number
+    type: string
     sql: ${TABLE}.file_of_interest_ind ;;
   }
+
 
   dimension: notes {
     type: string
