@@ -68,12 +68,12 @@ view: i_ds_day_scoring_demo {
 
   measure: min_score {
     type:  number
-    sql:  min(${TABLE}.total_score) ;;
+    sql:  min(${total_score}) ;;
   }
 
   measure: max_score {
     type:  number
-    sql:  max(${TABLE}.total_score) ;;
+    sql:  max(${total_score}) ;;
   }
 
   measure: count {
