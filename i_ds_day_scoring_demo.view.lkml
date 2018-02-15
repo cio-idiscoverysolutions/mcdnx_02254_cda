@@ -62,7 +62,7 @@ view: i_ds_day_scoring_demo {
   }
 
   measure: total_score {
-    type:  number
+    type:  sum
     sql:  ${TABLE}.results_num_value ;;
   }
 
