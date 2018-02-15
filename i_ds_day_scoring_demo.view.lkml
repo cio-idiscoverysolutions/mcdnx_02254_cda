@@ -66,15 +66,6 @@ view: i_ds_day_scoring_demo {
     sql:  ${TABLE}.results_num_value ;;
   }
 
-  measure: min_score {
-    type:  number
-    sql:  min(${total_score}) ;;
-  }
-
-  measure: max_score {
-    type:  number
-    sql:  max(${total_score}) ;;
-  }
 
   measure: count {
     type: count
