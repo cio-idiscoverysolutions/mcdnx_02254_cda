@@ -20,6 +20,8 @@ explore: i_ds_day_in_life {}
 
 explore: i_ds_day_scoring_demo {}
 
+explore: i_ds_day_scoring_rank_demo {}
+
 explore: primary_audit {}
 
 explore: relationship {}
