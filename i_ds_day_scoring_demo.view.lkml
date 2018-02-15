@@ -15,6 +15,17 @@ view: i_ds_day_scoring_demo {
     sql: ${TABLE}.date_beg_lcl ;;
   }
 
+  measure: most_recent_date {
+    type: time
+    sql: MAX(${date_beg_lcl_time});;
+  }
+
+  measure: earliest_date {
+    type: time
+    sql: MIN(${date_beg_lcl_time});;
+  }
+
+
   dimension: file_extension {
     type: string
     sql: ${TABLE}.file_extension ;;
