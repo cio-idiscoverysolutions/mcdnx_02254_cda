@@ -62,8 +62,18 @@ view: i_ds_day_scoring_demo {
   }
 
   measure: total_score {
-    type:  sum
+    type:  number
     sql:  ${TABLE}.results_num_value ;;
+  }
+
+  measure: min_score {
+    type:  number
+    sql:  min(${TABLE}.total_score) ;;
+  }
+
+  measure: max_score {
+    type:  number
+    sql:  max(${TABLE}.total_score) ;;
   }
 
   measure: count {
