@@ -17,6 +17,7 @@ datagroup: mcdnx_02254_cda_default_datagroup {
 persist_with: mcdnx_02254_cda_default_datagroup
 
 explore: i_ds_day_in_life {}
+explore: i_ds_day_in_life_evt_group {}
 
 explore: i_ds_day_scoring_demo {}
 
