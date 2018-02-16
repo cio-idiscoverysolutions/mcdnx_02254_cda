@@ -20,6 +20,19 @@ view: i_ds_day_in_life {
     sql: ${TABLE}.date_beg_source ;;
   }
 
+  dimension_group: date_end_source {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.date_end_source ;;
+  }
 
   measure: most_recent_date {
     type: time
@@ -34,11 +47,6 @@ view: i_ds_day_in_life {
   dimension: evt_group {
     type: string
     sql: ${TABLE}.evt_group ;;
-  }
-
-  dimension: evt_num {
-    type: number
-    sql: ${TABLE}.evt_num ;;
   }
 
   dimension: evt_type {
