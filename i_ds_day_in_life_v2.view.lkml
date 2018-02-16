@@ -1,4 +1,4 @@
-view: i_ds_day_in_life_v2 {
+view: i_ds_day_in_life {
   sql_table_name: dbo.iDS_day_in_life ;;
 
   dimension: custodian {
