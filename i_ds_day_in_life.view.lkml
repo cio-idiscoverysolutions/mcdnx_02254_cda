@@ -92,6 +92,6 @@ view: i_ds_day_in_life {
 
   measure: count {
     type: count
-    drill_fields: [date_beg_source_time, evt_group, evt_type, notes, object]
+    drill_fields: [date_beg_source_time, evt_group, evt_type, object, notes]
   }
 }
