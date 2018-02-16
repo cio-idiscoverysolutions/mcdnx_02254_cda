@@ -1,5 +1,5 @@
-view: i_ds_day_in_life_old_xxx {
-  sql_table_name: dbo.iDS_day_in_life_old_xxx ;;
+view: i_ds_day_in_life {
+  sql_table_name: dbo.iDS_day_in_life ;;
 
   dimension: custodian {
     type: string
@@ -34,6 +34,7 @@ view: i_ds_day_in_life_old_xxx {
     sql: ${TABLE}.date_end_source ;;
   }
 
+
   measure: most_recent_date {
     type: time
     sql: MAX(${date_end_source_time});;
@@ -64,7 +65,6 @@ view: i_ds_day_in_life_old_xxx {
     sql: ${TABLE}.file_of_interest_ind ;;
   }
 
-
   dimension: notes {
     type: string
     sql: ${TABLE}.NOTES ;;
@@ -86,7 +86,7 @@ view: i_ds_day_in_life_old_xxx {
   }
 
   dimension: user_ext_ind {
-    type: number
+    type: string
     sql: ${TABLE}.user_ext_ind ;;
   }
 
