@@ -81,7 +81,7 @@ view: i_ds_day_in_life {
   }
 
   dimension: udf_id {
-    type: number
+    type: string
     sql: ${TABLE}.UDF_ID ;;
   }
 
