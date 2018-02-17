@@ -15,6 +15,21 @@ view: i_ds_day_scoring_demo {
     sql: ${TABLE}.date_beg_lcl ;;
   }
 
+  dimension_group: timeline_end_date {
+    type: time
+    timeframes: [
+      raw,
+      time,
+      date,
+      week,
+      month,
+      quarter,
+      year
+    ]
+    sql: ${TABLE}.timeline_end_date ;;
+  }
+
+
   measure: most_recent_date {
     type: time
     sql: MAX(${date_beg_lcl_time});;
