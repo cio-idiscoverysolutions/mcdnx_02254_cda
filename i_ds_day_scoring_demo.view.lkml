@@ -63,7 +63,7 @@ view: i_ds_day_scoring_demo {
   }
 
   dimension: udf_id {
-    type: number
+    type: string
     sql: ${TABLE}.UDF_ID ;;
   }
 
