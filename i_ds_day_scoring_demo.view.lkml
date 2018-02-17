@@ -69,6 +69,6 @@ view: i_ds_day_scoring_demo {
 
   measure: count {
     type: count
-    drill_fields: [full_name, name]
+    drill_fields: [date_beg_lcl_time, full_name, name, notes, results_text_value, results_num_value]
   }
 }
