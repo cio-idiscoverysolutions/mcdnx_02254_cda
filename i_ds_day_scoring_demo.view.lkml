@@ -64,8 +64,7 @@ view: i_ds_day_scoring_demo {
 
   dimension: udf_id {
     type: string
-    sql: ${TABLE}.UDF_ID
-    description: "test";;
+    sql: ${TABLE}.UDF_ID;;
   }
 
   measure: total_score {
